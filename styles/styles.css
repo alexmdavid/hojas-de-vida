@@ -138,14 +138,14 @@ div {
     clip-path: circle(50% at 50% 50%);
 }
 
-/* Estilos para la imagen de perfil */
+
 div > img {
     width: 400px; 
-    height: 400px; /* Ajusta el tamaño */
-    background-color: #f0f0f0; /* Fondo gris claro para cuando no hay imagen */
-    border-radius: 90%; /* Mantiene la forma circular */
+    height: 400px; 
+    background-color: #f0f0f0; 
+    border-radius: 90%; 
     display: block;
-    margin: 0 auto; /* Centra la imagen horizontalmente */
-    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+    margin: 0 auto; 
+    object-fit: cover; 
 }
 
