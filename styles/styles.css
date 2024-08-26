@@ -263,3 +263,28 @@ button:hover {
     color: white;
 }
 
+
+
+.email-icon.dark-mode {
+    border: 2px solid #4CAF50;
+}
+
+.email-icon.dark-mode .top, 
+.email-icon.dark-mode .bottom, 
+.email-icon.dark-mode .flap {
+    background-color: #4CAF50;
+}
+
+.header-right i.fa-heart {
+    color: #fff; 
+}
+
+.header-right i.fa-github {
+    color: #ffffff
+}
+
+
+.header-right{
+    text-align: center;
+    gap: 5px;
+}
