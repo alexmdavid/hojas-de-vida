@@ -1,309 +1,342 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página Principal</title>
-    <link rel="stylesheet" href="./styles/styles.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="logo">
-          <img src="logo.png" alt="Logo Universidad del Magdalena">
-      </div>
-      <div class="title">
-          <h1>CAMPUS VIRTUAL</h1>
-      </div>
-      <div class="user-info">
-        <div class="icons">
-            <a href="#"><i class="icon-grid"></i></a>
-            <a href="#"><i class="icon-envelope"></i></a>
-            <a href="#"><i class="icon-chat"></i></a>
-            <a href="#"><i class="icon-bell"></i></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página Principal</title>
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div style="display: flex; align-items: center; justify-content:space-evenly;">
+      <section class="section_1">
+        <div id="box_logoCampus">
+          <img src="./img/BS_Campus Virtual_UM_LOGO_v1.jpg" alt="Logo campus unimag" id="logoCampus">
         </div>
-        <div class="user-profile">
-            <span class="user-initials">AR</span>
-            <span class="user-name">ALEXANDER DAVID RUIDIAZ...</span>
-            <a href="#"><i class="icon-settings"></i></a>
+
+        <img src="./img/divisior.png" alt="seccionador" class="lineDivisor">
+
+        <div>
+          <h1 id="text_materia">DESARROLLO WEB: FRONT...</h1>
         </div>
+
+      </section>
+      <section id="section_icons">
+
+        <div>
+          <img src="./img/icon_menu.png" alt="icono menu" id="icon_menu">
+        </div>
+
+        <img src="./img/divisior.png" alt="seccionador" class="lineDivisor" style="margin: 0px 12px;">
+
+        <div style="width: 180px; display: flex; justify-content: space-around;">
+          <img src="./img/icon_mensaje.png" alt="icono mensaje" id="icon_mensaje">
+          <img src="./img/iconDiscutions.png" alt="icono discucion" id="icon_discutions">
+          <img src="./img/iconBell.png" alt="icono notificacion" id="icon_bell">
+        </div>
+
+      </section>
+
+      <section id="section_user" style="justify-self: flex-end;">
+
+        <img src="./img/divisior.png" alt="seccionador" class="lineDivisor" style="margin: 0px 12px;">
+
+        <div id="userInfo">
+
+          <img src="./img/Imagen de WhatsApp 2024-08-25 a las 18.11.03_0e0e2077.jpg" alt="foto usuario" id="foto_user">
+          <h2>ALEXANDER RUIZ DIAZ</h2>
+        </div>
+
+
+      </section>
     </div>
-      <nav class="navbar">
-          <ul>
-              <li><a href="#">Noticias</a></li>
-              <li><a href="#">Calendario</a></li>
-              <li><a href="#">Descubrir</a></li>
-              <li><a href="#">Biblioteca en línea</a></li>
-              <li><a href="#">Ayuda</a></li>
-          </ul>
-      </nav>
-      
+    <div
+      style="background-color: #004a87; display: flex; width: 100vw; align-items: center; height: 2rem; color: #FFFFFF; text-decoration: none; ">
+      <div class="navlist" style="display: flex; justify-content: space-around; width: 100%;">
+        <span>Contenido</span>
+        <span>Asignaciones</span>
+        <span>Foros</span>
+        <span>Cuestionarios</span>
+        <span>Progreso de la clase</span>
+        <span>Valoraciones</span>
+        <span>Evaluación</span>
+        <span>Herramientas</span>
+      </div>
+    </div>
   </header>
 
-    <div> 
-      <input
-        type="text"
-        id="searchBar"
-        placeholder="Buscar perfiles..."
-        onkeyup="buscarPerfil()"
-      />
-      Mostrar opciones de búsqueda
+  <div style="display: flex; align-items: center; gap: 8px;">
+    <div style="background-color: #FFFFFF;  width: 30%; height: 30px; display: flex; align-items: center; border-radius: 12px; margin-left: 10px;">
+      <input type="text" style="border: none; width: 88%; background: none;" id="searchBar" placeholder="Buscar perfiles..." onkeyup="buscarPerfil()" />
+      <img src="./img/lupa.png" alt="logo lupa" style="align-items: self-end; height: 18px; width: 18px;">
     </div>
+    <p>Mostrar opciones de búsqueda</p>
+  </div>
 
-    <main>
-      <section id="profileList">
-        <div>
-          <img src="./img/Captura de pantalla 2024-08-22 215953.png" />
-          <h2><a href="perfil1.html">Jesus David Arias Jimenez</a></h2>
-          <h5>Estudiante</h5>
-          <button>Ver
-          </button>
-          <div id="social-icons">
-            <a href="#"><img src="./img/linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="./img/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="./img/face.png" alt="Facebook"></a>
+  <main>
+    <section class="box_main" id="profileList">
+      <div class="box_tarjeta">
+        <img src="./img/Captura de pantalla 2024-08-22 215953.png" class="phto_user" />
+        <h2><a href="perfil1.html">Jesus David Arias Jimenez</a></h2>
+        <h5>Estudiante</h5>
+        <button>Ver
+        </button>
+        <div id="social-icons">
+          <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" class="icon_Redes"></a>
+          <a href="#"><img src="./img/twitter.png" alt="Twitter" class="icon_Redes"></a>
+          <a href="#"><img src="./img/face.png" alt="Facebook" class="icon_Redes"></a>
         </div>
+      </div>
+      <div class="box_tarjeta">
+        <img src="./img/segundo.png" alt="Foto de Perfil 2" class="phto_user" />
+        <h2><a href="perfil2.html">Juan Sebastian Martinez Uribe</a></h2>
+        <h5>Estudiante</h5>
+        <button>Ver
+        </button>
+        <div id="social-icons">
+          <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" class="icon_Redes"></a>
+          <a href="#"><img src="./img/twitter.png" alt="Twitter" class="icon_Redes"></a>
+          <a href="#"><img src="./img/face.png" alt="Facebook" class="icon_Redes"></a>
         </div>
-        <div>
-          <img src="./img/segundo.png" alt="Foto de Perfil 2" />
-          <h2><a href="perfil2.html">Juan Sebastian Martinez Uribe</a></h2>
-          <h5>Estudiante</h5>
-          <button>Ver
-          </button>
-          <div id="social-icons">
-            <a href="#"><img src="./img/linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="./img/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="./img/face.png" alt="Facebook"></a>
-        </div>
-        </div>
-        <div>
-          
-          <img src="./img/tercero.png" alt="Foto de Perfil 2" />
-          <h2><a href="perfil2.html">Eduardo Jose Ortega Duran </a></h2>
-          <h5>Estudiante</h5>
-          <button>Ver
-          </button>
-          <div id="social-icons">
-            <a href="#"><img src="./img/linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="./img/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="./img/face.png" alt="Facebook"></a>
-        </div>
-        </div>
-        <div>
-          <img src="./img/cuarto.png" alt="Foto de Perfil 2" />
-          <h2><a href="perfil2.html">Daniel Nicolas Barros Vargas</a></h2>
-          <h5>Estudiante</h5>
-          <button>Ver
-          </button>
-          <div id="social-icons">
-            <a href="#"><img src="./img/linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="./img/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="./img/face.png" alt="Facebook"></a>
-        </div>
-        </div>
-        <div>
-          <img src="./img/quinto.png" alt="Foto de Perfil 2" />
-          <h2><a href="perfil2.html">Diomedes Farit Cerda Leon</a></h2>
-          <h5>Estudiante</h5>
-          <button>Ver
-          </button>
-          <div id="social-icons">
-            <a href="#"><img src="./img/linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="./img/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="./img/face.png" alt="Facebook"></a>
-        </div>
-        </div>
-        <div>
-          <img src="./img/sexto.png" alt="Foto de Perfil 2" />
-          <h2><a href="perfil2.html">Romel Arango</a></h2>
-          <h5>Estudiante</h5>
-          <button>Ver
-          </button>
-          <div id="social-icons">
-            <a href="#"><img src="./img/linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="./img/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="./img/face.png" alt="Facebook"></a>
-        </div>
-        </div>
-        <div>
-          <img src="./img/septimo.png" alt="Foto de Perfil 2" />
-          <h2><a href="perfil2.html">Eduardo Enrique Vergara Vergara</a></h2>
-          <h5>Estudiante</h5>
-          <button>Ver
-          </button>
-          <div id="social-icons">
-            <a href="#"><img src="./img/linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="./img/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="./img/face.png" alt="Facebook"></a>
-        </div>
-        </div>
-        <div>
-          <img src="./img/octavo.png" alt="Foto de Perfil 2" />
-          <h2><a href="perfil2.html">Gadiel Arturo Comas Quiroga</a></h2>
-          <h5>Estudiante</h5>
-          <button>Ver
-          </button>
-          <div id="social-icons">
-            <a href="#"><img src="./img/linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="./img/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="./img/face.png" alt="Facebook"></a>
-        </div>
-        </div>
-        <div>
-            <img src="./img/noveno.png" alt="Foto de Perfil 2" />
-            <h2><a href="perfil2.html">Luis Miguel Gutierrez Gonzalez</a></h2>
-            <h5>Estudiante</h5>
-          <button>Ver
-          </button>
-          <div id="social-icons">
-            <a href="#"><img src="./img/linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="./img/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="./img/face.png" alt="Facebook"></a>
-        </div>
-          </div>
-          <div>
-            <img src="./img/decimo.png" alt="Foto de Perfil 2" />
-            <h2><a href="perfil2.html">Carlos Alberto Hernández Baquero</a></h2>
-            <h5>Estudiante</h5>
-          <button>Ver
-          </button>
-          <div id="social-icons">
-            <a href="#"><img src="./img/linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="./img/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="./img/face.png" alt="Facebook"></a>
-        </div>
-          </div>
-          <div>
-            <img src="./img/once.png" alt="Foto de Perfil 2" />
-            <h2><a href="perfil2.html">Steeven Zambrano</a></h2>
-            <h5>Estudiante</h5>
-          <button>Ver
-          </button>
-          <div id="social-icons">
-            <a href="#"><img src="./img/linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="./img/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="./img/face.png" alt="Facebook"></a>
-        </div>
-          </div>
-          <div>
-            <img src="" alt="Foto de Perfil 2" />
-            <h2><a href="perfil2.html">Karol Vanessa Ospino Lara</a></h2>
-            <h5>Estudiante</h5>
-          <button>Ver
-          </button>
-          <div id="social-icons">
-            <a href="#"><img src="./img/linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="./img/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="./img/face.png" alt="Facebook"></a>
-        </div>
-          </div>
-          <div>
-            <img src="" alt="Foto de Perfil 2" />
-            <h2><a href="perfil2.html">Alirio Bnaguera Sinisterra</a></h2>
-            <h5>Estudiante</h5>
-          <button>Ver
-          </button>
-          <div id="social-icons">
-            <a href="#"><img src="./img/linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="./img/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="./img/face.png" alt="Facebook"></a>
-        </div>
-          </div>
-          <div>
-            <img src="img/Imagen de WhatsApp 2024-08-25 a las 18.11.03_0e0e2077.jpg" alt="Foto de Perfil 2" />
-            <h2><a href="perfil2.html">Alexander David Ruidiaz Carrascal</a></h2>
-            <h5>Estudiante</h5>
-          <button>Ver
-          </button>
-          <div id="social-icons">
-            <a href="#"><img src="./img/linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="./img/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="./img/face.png" alt="Facebook"></a>
-        </div>
-          </div>
-          <div>
-            <img src="./img/alfonso.png" alt="Foto de Perfil 2" />
-            <h2><a href="perfil2.html">Alfonso Manuel Salazar de Leon</a></h2>
-            <h5>Estudiante</h5>
-          <button>Ver
-          </button>
-          <div id="social-icons">
-            <a href="#"><img src="./img/linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="./img/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="./img/face.png" alt="Facebook"></a>
-        </div>
-          </div>
-          <div>
-            <img src="./img/jenifer.png" alt="Foto de Perfil 2" />
-            <h2><a href="perfil2.html">Jenifer Tatiana Roa Correa</a></h2>
-            <h5>Estudiante</h5>
-          <button>Ver
-          </button>
-          <div id="social-icons">
-            <a href="#"><img src="./img/linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="./img/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="./img/face.png" alt="Facebook"></a>
-        </div>
-          </div>
-          <div>
-            <img src="img/perfil2.jpg" alt="Foto de Perfil 2" />
-            <h2><a href="perfil2.html">Carolina Gutierrez Cacéres</a></h2>
-            <h5>Estudiante</h5>
-          <button>Ver
-          </button>
-          <div id="social-icons">
-            <a href="#"><img src="./img/linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="./img/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="./img/face.png" alt="Facebook"></a>
-        </div>
-          </div>
-          <div>
-            <img src="img/perfil2.jpg" alt="Foto de Perfil 2" />
-            <h2><a href="perfil2.html">Jorge Andrés Centero Barreto</a></h2>
-            <h5>Estudiante</h5>
-          <button>Ver
-          </button>
-          <div id="social-icons">
-            <a href="#"><img src="./img/linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="./img/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="./img/face.png" alt="Facebook"></a>
-        </div>
-          </div>
-          <div>
-            <img src="./img/juan isaza.png" alt="Foto de Perfil 2" />
-            <h2><a href="perfil2.html">Juan David del Rio Isaza</a></h2>
-            <h5>Estudiante</h5>
-          <button>Ver
-          </button>
-          <div id="social-icons">
-            <a href="#"><img src="./img/linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="./img/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="./img/face.png" alt="Facebook"></a>
-        </div>
-          </div>
-          
-        
-      </section>
-    </main>
+      </div>
+      <div class="box_tarjeta">
 
-    <script>
-      function buscarPerfil() {
-        let input = document.getElementById("searchBar").value.toLowerCase();
-        let profiles = document
-          .getElementById("profileList")
-          .getElementsByTagName("nav");
+        <img src="./img/tercero.png" alt="Foto de Perfil 2" class="phto_user" />
+        <h2><a href="perfil2.html">Eduardo Jose Ortega Duran </a></h2>
+        <h5>Estudiante</h5>
+        <button>Ver
+        </button>
+        <div id="social-icons">
+          <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" class="icon_Redes"></a>
+          <a href="#"><img src="./img/twitter.png" alt="Twitter" class="icon_Redes"></a>
+          <a href="#"><img src="./img/face.png" alt="Facebook" class="icon_Redes"></a>
+        </div>
+      </div>
+      <div class="box_tarjeta">
+        <img src="./img/cuarto.png" alt="Foto de Perfil 2" class="phto_user" />
+        <h2><a href="perfil2.html">Daniel Nicolas Barros Vargas</a></h2>
+        <h5>Estudiante</h5>
+        <button>Ver
+        </button>
+        <div id="social-icons">
+          <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" class="icon_Redes"></a>
+          <a href="#"><img src="./img/twitter.png" alt="Twitter" class="icon_Redes"></a>
+          <a href="#"><img src="./img/face.png" alt="Facebook" class="icon_Redes"></a>
+        </div>
+      </div>
+      <div class="box_tarjeta">
+        <img src="./img/quinto.png" alt="Foto de Perfil 2" class="phto_user" />
+        <h2><a href="perfil2.html">Diomedes Farit Cerda Leon</a></h2>
+        <h5>Estudiante</h5>
+        <button>Ver
+        </button>
+        <div id="social-icons">
+          <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" class="icon_Redes"></a>
+          <a href="#"><img src="./img/twitter.png" alt="Twitter" class="icon_Redes"></a>
+          <a href="#"><img src="./img/face.png" alt="Facebook" class="icon_Redes"></a>
+        </div>
+      </div>
+      <div class="box_tarjeta">
+        <img src="./img/sexto.png" alt="Foto de Perfil 2" class="phto_user" />
+        <h2><a href="perfil2.html">Romel Arango</a></h2>
+        <h5>Estudiante</h5>
+        <button>Ver
+        </button>
+        <div id="social-icons">
+          <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" class="icon_Redes"></a>
+          <a href="#"><img src="./img/twitter.png" alt="Twitter" class="icon_Redes"></a>
+          <a href="#"><img src="./img/face.png" alt="Facebook" class="icon_Redes"></a>
+        </div>
+      </div>
+      <div class="box_tarjeta">
+        <img src="./img/septimo.png" alt="Foto de Perfil 2" class="phto_user" />
+        <h2><a href="perfil2.html">Eduardo Enrique Vergara Vergara</a></h2>
+        <h5>Estudiante</h5>
+        <button>Ver
+        </button>
+        <div id="social-icons">
+          <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" class="icon_Redes"></a>
+          <a href="#"><img src="./img/twitter.png" alt="Twitter" class="icon_Redes"></a>
+          <a href="#"><img src="./img/face.png" alt="Facebook" class="icon_Redes"></a>
+        </div>
+      </div>
+      <div class="box_tarjeta">
+        <img src="./img/octavo.png" alt="Foto de Perfil 2" class="phto_user" />
+        <h2><a href="perfil2.html">Gadiel Arturo Comas Quiroga</a></h2>
+        <h5>Estudiante</h5>
+        <button>Ver
+        </button>
+        <div id="social-icons">
+          <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" class="icon_Redes"></a>
+          <a href="#"><img src="./img/twitter.png" alt="Twitter" class="icon_Redes"></a>
+          <a href="#"><img src="./img/face.png" alt="Facebook" class="icon_Redes"></a>
+        </div>
+      </div>
+      <div class="box_tarjeta">
+        <img src="./img/noveno.png" alt="Foto de Perfil 2" class="phto_user" />
+        <h2><a href="perfil2.html">Luis Miguel Gutierrez Gonzalez</a></h2>
+        <h5>Estudiante</h5>
+        <button>Ver
+        </button>
+        <div id="social-icons">
+          <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" class="icon_Redes"></a>
+          <a href="#"><img src="./img/twitter.png" alt="Twitter" class="icon_Redes"></a>
+          <a href="#"><img src="./img/face.png" alt="Facebook" class="icon_Redes"></a>
+        </div>
+      </div>
+      <div class="box_tarjeta">
+        <img src="./img/decimo.png" alt="Foto de Perfil 2" class="phto_user" />
+        <h2><a href="perfil2.html">Carlos Alberto Hernández Baquero</a></h2>
+        <h5>Estudiante</h5>
+        <button>Ver
+        </button>
+        <div id="social-icons">
+          <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" class="icon_Redes"></a>
+          <a href="#"><img src="./img/twitter.png" alt="Twitter" class="icon_Redes"></a>
+          <a href="#"><img src="./img/face.png" alt="Facebook" class="icon_Redes"></a>
+        </div>
+      </div>
+      <div class="box_tarjeta">
+        <img src="./img/once.png" alt="Foto de Perfil 2" class="phto_user" />
+        <h2><a href="perfil2.html">Steeven Zambrano</a></h2>
+        <h5>Estudiante</h5>
+        <button>Ver
+        </button>
+        <div id="social-icons">
+          <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" class="icon_Redes"></a>
+          <a href="#"><img src="./img/twitter.png" alt="Twitter" class="icon_Redes"></a>
+          <a href="#"><img src="./img/face.png" alt="Facebook" class="icon_Redes"></a>
+        </div>
+      </div>
+      <div class="box_tarjeta">
+        <img src="" alt="Foto de Perfil 2" class="phto_user" />
+        <h2><a href="perfil2.html">Karol Vanessa Ospino Lara</a></h2>
+        <h5>Estudiante</h5>
+        <button>Ver
+        </button>
+        <div id="social-icons">
+          <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" class="icon_Redes"></a>
+          <a href="#"><img src="./img/twitter.png" alt="Twitter" class="icon_Redes"></a>
+          <a href="#"><img src="./img/face.png" alt="Facebook" class="icon_Redes"></a>
+        </div>
+      </div>
+      <div class="box_tarjeta">
+        <img src="" alt="Foto de Perfil 2" class="phto_user" />
+        <h2><a href="perfil2.html">Alirio Bnaguera Sinisterra</a></h2>
+        <h5>Estudiante</h5>
+        <button>Ver
+        </button>
+        <div id="social-icons">
+          <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" class="icon_Redes"></a>
+          <a href="#"><img src="./img/twitter.png" alt="Twitter" class="icon_Redes"></a>
+          <a href="#"><img src="./img/face.png" alt="Facebook" class="icon_Redes"></a>
+        </div>
+      </div>
+      <div class="box_tarjeta">
+        <img src="img/Imagen de WhatsApp 2024-08-25 a las 18.11.03_0e0e2077.jpg" alt="Foto de Perfil 2"
+          class="phto_user" />
+        <h2><a href="perfil2.html">Alexander David Ruidiaz Carrascal</a></h2>
+        <h5>Estudiante</h5>
+        <button>Ver
+        </button>
+        <div id="social-icons">
+          <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" class="icon_Redes"></a>
+          <a href="#"><img src="./img/twitter.png" alt="Twitter" class="icon_Redes"></a>
+          <a href="#"><img src="./img/face.png" alt="Facebook" class="icon_Redes"></a>
+        </div>
+      </div>
+      <div class="box_tarjeta">
+        <img src="./img/alfonso.png" alt="Foto de Perfil 2" class="phto_user" />
+        <h2><a href="perfil2.html">Alfonso Manuel Salazar de Leon</a></h2>
+        <h5>Estudiante</h5>
+        <button>Ver
+        </button>
+        <div id="social-icons">
+          <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" class="icon_Redes"></a>
+          <a href="#"><img src="./img/twitter.png" alt="Twitter" class="icon_Redes"></a>
+          <a href="#"><img src="./img/face.png" alt="Facebook" class="icon_Redes"></a>
+        </div>
+      </div>
+      <div class="box_tarjeta">
+        <img src="./img/jenifer.png" alt="Foto de Perfil 2" class="phto_user" />
+        <h2><a href="perfil2.html">Jenifer Tatiana Roa Correa</a></h2>
+        <h5>Estudiante</h5>
+        <button>Ver
+        </button>
+        <div id="social-icons">
+          <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" class="icon_Redes"></a>
+          <a href="#"><img src="./img/twitter.png" alt="Twitter" class="icon_Redes"></a>
+          <a href="#"><img src="./img/face.png" alt="Facebook" class="icon_Redes"></a>
+        </div>
+      </div>
+      <div class="box_tarjeta">
+        <img src="img/perfil2.jpg" alt="Foto de Perfil 2" class="phto_user" />
+        <h2><a href="perfil2.html">Carolina Gutierrez Cacéres</a></h2>
+        <h5>Estudiante</h5>
+        <button>Ver
+        </button>
+        <div id="social-icons">
+          <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" class="icon_Redes"></a>
+          <a href="#"><img src="./img/twitter.png" alt="Twitter" class="icon_Redes"></a>
+          <a href="#"><img src="./img/face.png" alt="Facebook" class="icon_Redes"></a>
+        </div>
+      </div>
+      <div class="box_tarjeta">
+        <img src="img/perfil2.jpg" alt="Foto de Perfil 2" class="phto_user" />
+        <h2><a href="perfil2.html">Jorge Andrés Centero Barreto</a></h2>
+        <h5>Estudiante</h5>
+        <button>Ver
+        </button>
+        <div id="social-icons">
+          <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" class="icon_Redes"></a>
+          <a href="#"><img src="./img/twitter.png" alt="Twitter" class="icon_Redes"></a>
+          <a href="#"><img src="./img/face.png" alt="Facebook" class="icon_Redes"></a>
+        </div>
+      </div>
+      <div class="box_tarjeta">
+        <img src="./img/juan isaza.png" alt="Foto de Perfil 2" class="phto_user" />
+        <h2><a href="perfil2.html">Juan David del Rio Isaza</a></h2>
+        <h5>Estudiante</h5>
+        <button>Ver
+        </button>
+        <div id="social-icons">
+          <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" class="icon_Redes"></a>
+          <a href="#"><img src="./img/twitter.png" alt="Twitter" class="icon_Redes"></a>
+          <a href="#"><img src="./img/face.png" alt="Facebook" class="icon_Redes"></a>
+        </div>
+      </div>
 
-        for (let i = 0; i < profiles.length; i++) {
-          let h2 = profiles[i].getElementsByTagName("h2")[0];
-          let textValue = h2.textContent || h2.innerText;
 
-          if (textValue.toLowerCase().indexOf(input) > -1) {
-            profiles[i].style.display = "";
-          } else {
-            profiles[i].style.display = "none";
-          }
+    </section>
+  </main>
+
+  <script>
+    function buscarPerfil() {
+      let input = document.getElementById("searchBar").value.toLowerCase();
+      let profiles = document
+        .getElementById("profileList")
+        .getElementsByTagName("nav");
+
+      for (let i = 0; i < profiles.length; i++) {
+        let h2 = profiles[i].getElementsByTagName("h2")[0];
+        let textValue = h2.textContent || h2.innerText;
+
+        if (textValue.toLowerCase().indexOf(input) > -1) {
+          profiles[i].style.display = "";
+        } else {
+          profiles[i].style.display = "none";
         }
       }
-    </script>
-    <footer> os Alexander</footer>
-  </body>
+    }
+  </script>
+  <footer> os Alexander</footer>
+</body>
+
 </html>
